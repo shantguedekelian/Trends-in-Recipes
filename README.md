@@ -8,7 +8,7 @@ This project explores trends in online recipes over time using a dataset from Fo
 
 With the rise of fitness culture, dietary tracking apps, and growing awareness about nutrition, protein has taken center stage in many people’s diets. By analyzing whether recipes emphasizing protein are being submitted more frequently, we can get a window into shifting food priorities, what people value in meals, and how cultural trends around health and fitness are shaping home cooking.
 
-It’s a trend that is important to more than just health experts as it reflects how everyday people are thinking about their meals and making choices in the kitchen.
+This is a trend that is important to more than just health experts as it reflects how everyday people are thinking about their meals and making choices in the kitchen.
 
 The dataset that I am using contains **234,429 rows**, each corresponding to a review written about a recipe. In total there are **83,782 unique** recipes in my dataset. 
 
