@@ -6,9 +6,9 @@ this is a project for DSC 80 at UCSD
 # Introduction
 This project explores trends in online recipes over time using a dataset from Food.com, which includes thousands of user-submitted recipes and reviews. The central question we aim to answer is: **Have high-protein recipes become more popular in recent years?**
 
-With the rise of fitness culture, dietary tracking apps, and growing awareness about nutrition, protein has taken center stage in many people’s diets. By analyzing whether recipes emphasizing protein are being submitted more frequently, we can get a window into shifting food priorities—what people value in meals, and how cultural trends around health and fitness are shaping home cooking.
+With the rise of fitness culture, dietary tracking apps, and growing awareness about nutrition, protein has taken center stage in many people’s diets. By analyzing whether recipes emphasizing protein are being submitted more frequently, we can get a window into shifting food priorities, what people value in meals, and how cultural trends around health and fitness are shaping home cooking.
 
-This matters not just for nutritionists or food brands, but for anyone interested in how public interest in health is reflected in everyday choices like what we cook and eat. 
+It’s a trend that is important to more than just health experts as it reflects how everyday people are thinking about their meals and making choices in the kitchen.
 
 The dataset that I am using contains **234,429 rows**, each corresponding to a review written about a recipe. In total there are **83,782 unique** recipes in my dataset. 
 
