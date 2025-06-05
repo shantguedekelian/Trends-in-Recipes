@@ -91,7 +91,7 @@ As we see, there is an overall increase in calories as the number of ingredients
 There are only 3 columns in the dataset that contain NaN values; they are **description**, **rating**, **review**.
 Lets take a look at each one.
 
-> **Description:** Not NMAR, most likely MAR
+> **Description:** Not NMAR, most likely MAR since the probability of a recipe not having a description likely depends on how complex a recipe is.
 >
 > **Rating:** NMAR since ratings tend to be extremely positive or negative. If the review is more in the middle, there is a lower probability of the user writing it. People are more likely to leave a review when they really loved a recipe, or they really hated it.
 >
@@ -100,9 +100,9 @@ Lets take a look at each one.
 ### MAR Analysis:
 To determine if the missing values in **description** column are MAR, **I will perform a permutation test to see if the probability of null values in the 'description' column is dependent on 'n-ingredients' and unrelated to 'sugar_pdv'**
 
-> n_ingredients: Likely related (more complex recipes might get more explanation)
+> n_ingredients: Likely related to 'description' column (more complex recipes might get more explanation).
 >
-> sugar_pdv: Unlikely related (nutritional info is calculated)
+> sugar_pdv: Likely not related to 'description' column (nutritional info is calculated).
 
 
 
