@@ -50,7 +50,6 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 **Figure 2** represents the relationship between of **calories and total fat**, giving insight into how calorie-dense fat is.
 
 <br>
-<br>
 
 <iframe
   src="assets/cal_v_totalfat (2).html"
@@ -65,6 +64,45 @@ This scatter plot shows a strong correlation (an **R<sup>2</sup>** value of **0.
 
 ### Interesting Aggregrates:
 asdasd
+
+<br>
+
+|   n_ingredients |   calories |
+|----------------:|-----------:|
+|               1 |   1151.86  |
+|               2 |    395.96  |
+|               3 |    283.122 |
+|               4 |    305.826 |
+|               5 |    331.26  |
+|               6 |    357.845 |
+|               7 |    393.29  |
+|               8 |    383.002 |
+|               9 |    416.447 |
+|              10 |    435.213 |
+|              11 |    468.779 |
+|              12 |    464.954 |
+|              13 |    484.344 |
+|              14 |    514.04  |
+|              15 |    552.521 |
+|              16 |    609.078 |
+|              17 |    554.704 |
+|              18 |    617.204 |
+|              19 |    585.077 |
+|              20 |    662.043 |
+|              21 |    778.759 |
+|              22 |    701.687 |
+|              23 |    660.945 |
+|              24 |    591.681 |
+|              25 |    766.61  |
+|              26 |    840.441 |
+|              27 |   1301.2   |
+|              28 |    670.14  |
+|              29 |    880.897 |
+|              30 |    678.464 |
+|              31 |    872.454 |
+|              32 |    864.475 |
+|              33 |    338.2   |
+|              37 |  10687.7   |
 
 
 # Assessment of Missingness
