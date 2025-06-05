@@ -41,7 +41,7 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 
 <iframe
   src="assets/calories_dist (2).html"
-  width="1000"
+  width="900"
   height="600"
   frameborder="0"
 ></iframe>
