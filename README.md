@@ -38,7 +38,7 @@ The distribution of minutes each recipe takes is showed by this histrogram.
 
 <iframe
   src="assets/calories_dist (1).html"
-  width="800"
+  width="1000"
   height="600"
   frameborder="0"
 ></iframe>
