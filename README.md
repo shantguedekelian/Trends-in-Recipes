@@ -34,7 +34,7 @@ Then using the merged dataframe, I filled in the ratings of 0 with null since ra
 Using the 'nutrition' column of the merged dataset, I added 7 columns, one for each nutrient information (calories, sugar pdv, carbohydrate pdv, etc).
 
 ### Univariate Analysis:
-**Figure 1** presents the distribution of **calories per serving**, giving insight into the overall nutritional density of the recipes.
+**Figure 1** represents the distribution of **calories per serving**, giving insight into the overall nutritional density of the recipes.
 
 <br>
 <br>
@@ -47,7 +47,17 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 ></iframe>
 
 ### Bivariate Analysis:
-aadasd
+**Figure 2** represents the relationship between of **calories and total fat**, giving insight into how calorie-dense fat is.
+
+<br>
+<br>
+
+<iframe
+  src="assets/cal_v_totalfat.html"
+  width="900"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Interesting Aggregrates:
 asdasd
