@@ -63,7 +63,7 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 This scatter plot shows a strong correlation (an **R<sup>2</sup>** value of **0.74**) between the two variables as shown by the trendline. This makes sense as fat is 7 calories per gram, making the densest nutrient in calories.
 
 ### Interesting Aggregrates:
-asdasd
+The mean calories for each number of ingredients.
 
 <br>
 
@@ -80,6 +80,10 @@ asdasd
 |              32 |    864.475 |
 |              33 |    338.2   |
 |              37 |  10687.7   |
+
+<br>
+
+As we see, there is an overall increase in calories as the number of ingredients increases; suggesting that more complex meals might be correlated with higher calories.
 
 
 # Assessment of Missingness
