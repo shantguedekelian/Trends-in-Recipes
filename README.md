@@ -37,7 +37,7 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 The distribution of minutes each recipe takes is showed by this histrogram.
 
 <iframe
-  src="assets/calories_dist.html"
+  src="assets/calories_dist (1).html"
   width="800"
   height="600"
   frameborder="0"
