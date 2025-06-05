@@ -61,6 +61,7 @@ Using the 'nutrition' column of the merged dataset, I added 7 columns, one for e
 
 <br>
 
+This scatter plot shows a strong correlation (an **R<sup>2</sup>** value of **0.74**) between the two variables as shown by the trendline. This makes sense as fat is 7 calories per gram, making the densest nutrient in calories.
 
 ### Interesting Aggregrates:
 asdasd
