@@ -34,7 +34,14 @@ Then using the merged dataframe, I filled in the ratings of 0 with null since ra
 Using the 'nutrition' column of the merged dataset, I added 7 columns, one for each nutrient information (calories, sugar pdv, carbohydrate pdv, etc).
 
 ### Univariate Analysis:
-asasd
+The distribution of minutes each recipe takes is showed by this histrogram.
+
+<iframe
+  src="assets/minutes_dist.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Bivariate Analysis:
 aadasd
