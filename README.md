@@ -106,17 +106,20 @@ To determine if the missing values in **description** column are MAR, **I will p
 
 <br>
 
-The plot below shoes the difference in mean number of ingredients between missing, and not missing descriptions.
+The histogram shows the empirical distribution of the test statistic (difference in mean number of ingredients between missing, and not missing descriptions), along with the observed statistic in red.
 
 <br>
 <iframe
-  src="assets/mar_perm_test (1).html"
+  src="assets/mar_perm_test (2).html"
   width="900"
   height="600"
   frameborder="0"
 ></iframe>
 
 <br>
+
+The plot shows that the description column is definitely dependent on
+
 
 # Hypothesis Testing
 
