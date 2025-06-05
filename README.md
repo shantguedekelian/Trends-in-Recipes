@@ -27,6 +27,20 @@ Some relevant columns are:
 
 
 # Data Cleaning and Exploratory Data Analysis
+First of all, I had to merge two datasets. One contained all of the recipes information like the tags, nutrition info, and ingredients; the other contained all of the information regarding user feedback such as the date the review was submitted. 
+
+Then using the merged dataframe, I filled in the ratings of 0 with null since ratings usually start at 1, and I wouldn't want the zeroes to affect my future results. I created a new column named 'mean_rating' which represents the mean rating per recipe.
+
+Using the 'nutrition' column of the merged dataset, I added 7 columns, one for each nutrient information (calories, sugar pdv, carbohydrate pdv, etc).
+
+### Univariate Analysis:
+asasd
+
+### Bivariate Analysis:
+aadasd
+
+### Interesting Aggregrates:
+asdasd
 
 
 # Assessment of Missingness
