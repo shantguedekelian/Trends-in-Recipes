@@ -104,7 +104,18 @@ To determine if the missing values in **description** column are MAR, **I will p
 >
 > sugar_pdv: Likely not related to 'description' column (nutritional info is calculated).
 
+The plot below shoes the difference in mean number of ingredients between missing, and not missing descriptions.
 
+<br>
+
+<iframe
+  src="assets/mar_perm_test.html"
+  width="900"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<br>
 
 # Hypothesis Testing
 
