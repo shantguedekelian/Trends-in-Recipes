@@ -144,7 +144,7 @@ $$
 
 <br>
 
-**Figure 4:** the histogram shows the distribution of the test statistic.
+**Figure 4:** the histogram shows the distribution of the test statistic. ll
 
 <iframe
   src="assets/protein_perm_test.html"
