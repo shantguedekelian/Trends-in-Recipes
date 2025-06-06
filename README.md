@@ -177,7 +177,7 @@ Specifically, we'll try to predict the **'protein_pdv'** (percent daily value of
 This is a **regression problem**, as we're predicting a continuous numeric value.
 It could be useful for health-conscious users or dietary planning apps that need protein estimates without full nutritional data.
 
-The metric I will use to evaluate my model will be ___ because __.
+The metric I will use to evaluate my model will be R² because it provides a clear measure of how well our features explain the variability in the target variable (protein_pdv). Unlike RMSE or MAE, which are in the units of the target variable and harder to interpret directly, R² is a unitless, relative metric that tells us how much better our model. This makes it especially useful for comparing models and understanding overall performance. I considered RMSE and MAE, but chose R² for its interpretability and its ability to convey how much variance in protein_pdv our model captures.
 
 # Baseline Model
 
