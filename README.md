@@ -210,29 +210,41 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 # Final Model
 ### Features in my Final Model:
 
->**Nutrition Info:**
+>**Nutrition Info:** added three more features to increase number of nutritional features since there might be a relationship between nutrition info.
 >
->'calories':
->'total_fat_pdv': 
->'sugar_pdv': 
->'carbohydrates_pdv': 
-
->**Other Columns:**
+>`calories` *(Quantitative)*: The number of **calories** per serving of the recipe.
 >
->'n_steps':
->'n_ingredients':
-
-> **Tags:**
+>`total_fat_pdv` *(Quantitative)*: The percent daily value of **total fat** in a serving of the recipe.
 >
->'is_meat':
->'is_vegetarian':
->'is_high_protein':
->'is_main_dish':
->'is_poultry':
->'is_chicken':
->'is_beef':
+>`sugar_pdv` *(Quantitative)*: The percent daily value of **sugar** in a serving of the recipe.
+>
+>`carbohydrates_pdv` *(Quantitative)*: The percent daily value of **carbohydrates** in a serving of the recipe.
 
-I got these results by __ and here is the dataframe showing the tags with the highest correlation to `protein_pdv`.
+>**Other Columns:** added these features since there might be a relationship with the complexity of the recipe with the amount of protein
+>
+>`n_steps` *(Quantitative)*: The number of **steps** in a recipe.
+>
+>`n_ingredients` *(Quantitative)*: The number of **ingredients** in a recipe.
+
+> **Tags:** added five more encodings from the `tags` column based on the greatest correlation between the tag and `protein_pdv`.
+>
+>`is_meat` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'meat'.
+>
+>`is_vegetarian` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'vegetarian'.
+>
+>`is_high_protein` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'high-protein'.
+>
+>`is_main_dish` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'main-dish'.
+>
+>`is_poultry` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'poultry'.
+>
+>`is_chicken` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'chicken'.
+>
+>`is_beef` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'beef'.
+
+I found the tags with the greatest correlation to `protein_pdv` by __. Below is the dataframe of tags with the top ten highest correlations to `protein_pdv`.
+
+
 
 
 
