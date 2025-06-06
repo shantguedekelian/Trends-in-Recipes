@@ -312,7 +312,27 @@ To normalize the data, I applied a logarithmic transformation, which is particul
 The transformed distribution is much closer to normal, which helps improve model stability and interpretability.
 
 
-### Grid Search for best hyperparameters
+### Grid Search for best hyperparameters:
+
+To optimize the performance of the Decision Tree Regressor, I used GridSearchCV to tune key hyperparameters. Specifically, I searched over the following parameter grid:
+
+>`'max_depth': [3, 5, 10, 20, None]`
+>
+>`'min_samples_leaf': [1, 2, 4]`
+>
+>`'min_samples_split': [2, 5, 10]`
+
+These hyperparameters were chosen to help control the complexity of the tree and reduce the risk of overfitting, which Decision Trees are particularly susceptible to.
+
+Based on the grid search, the best-performing combination was:
+
+>`'max_depth': 20`
+>
+>`'min_samples_leaf': 4`
+>
+>`'min_samples_split': 10`
+
+
 
 # Fairness Analysis
 
