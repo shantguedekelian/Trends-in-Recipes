@@ -180,6 +180,29 @@ It could be useful for health-conscious users or dietary planning apps that need
 The metric I will use to evaluate my model will be R² because it provides a clear measure of how well our features explain the variability in the target variable (protein_pdv). Unlike RMSE or MAE, which are in the units of the target variable and harder to interpret directly, R² is a unitless, relative metric that tells us how much better our model. This makes it especially useful for comparing models and understanding overall performance. I considered RMSE and MAE, but chose R² for its interpretability and its ability to convey how much variance in protein_pdv our model captures.
 
 # Baseline Model
+**Features in my Model:**
+
+>**Nutrition Info:**
+>
+>'calories':
+>'total_fat_pdv': 
+>'sugar_pdv': 
+>'carbohydrates_pdv': 
+
+>**Other Columns:**
+>
+>'n_steps':
+>'n_ingredients':
+
+> **Tags:**
+>
+>'is_meat':
+>'is_vegetarian':
+>'is_high_protein':
+>'is_main_dish':
+>'is_poultry':
+>'is_chicken':
+>'is_beef':
 
 
 # Final Model
