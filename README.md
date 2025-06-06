@@ -135,12 +135,17 @@ The plot shows that the description column is definitely dependent on the number
 
 I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
 
+
+**Significance Level:** *P = 0.05*
+
 **Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. 
 
 $$
-\left( \frac{\text{# high_protein}_{>2016}}{\text{total # recipes}} \right) -
-\left( \frac{\text{# high_protein}_{\leq2016}}{\text{total # recipes}} \right) 
+\left( \frac{\text{# high_protein}_{>2016}}{\text{total # recipes}_{>2016}} \right) -
+\left( \frac{\text{# high_protein}_{\leq2016}}{\text{total # recipes}_{\leq2016}} \right) 
 $$
+
+The choice of test statistic is valid since we only care about a positive difference in means. Also because in the hypothesis we are dealing with difference in proportions. And difference in proportions is a good metric of popularity because it shows how popular it was compared to other tags.
 
 <br>
 
