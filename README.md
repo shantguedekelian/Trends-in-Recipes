@@ -208,7 +208,7 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 
 
 # Final Model
-**Features in my Final Model:**
+### Features in my Final Model:
 
 >**Nutrition Info:**
 >
@@ -231,6 +231,13 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 >'is_poultry':
 >'is_chicken':
 >'is_beef':
+
+I got these results by __ and here is the dataframe showing the tags with the highest correlation to `protein_pdv`.
+
+
+
+
+### Grid Search for best hyperparameters
 
 # Fairness Analysis
 
