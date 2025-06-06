@@ -149,7 +149,7 @@ The choice of test statistic is valid since we only care about a positive differ
 
 <br>
 
-**Figure 4:** the histogram shows the distribution of the test statistic. ll
+**Figure 4:** the histogram shows the distribution of the test statistic.
 
 <iframe
   src="assets/protein_perm_test.html"
@@ -163,7 +163,21 @@ The choice of test statistic is valid since we only care about a positive differ
 Our observed statistic is really far to the right and with a **p-value of <0.01**, we can conlude that our observed difference in proportions is **statistically significant**. Meaning that we **reject** the Null Hypothesis and conclude that there is a really likely **increase** in popularity for the **'high_protein'** tag after 2016.
 
 # Framing a Prediction Problem
+**Prediction Problem:**
+Can we predict how much protein a recipe contains, based on its other nutritional and descriptive features?
 
+Specifically, we'll try to predict the **'protein_pdv'** (percent daily value of protein) using features such as:
+
+>calories, total_fat_pdv, sugar_pdv, carbohydrates_pdv
+>
+>tags like 'meat', 'high-protein', 'vegetarian', etc. extracted from the tags column
+>
+>number of ingredients or steps
+
+This is a **regression problem**, as we're predicting a continuous numeric value.
+It could be useful for health-conscious users or dietary planning apps that need protein estimates without full nutritional data.
+
+The metric I will use to evaluate my model will be ___ because __.
 
 # Baseline Model
 
