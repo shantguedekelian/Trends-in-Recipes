@@ -168,11 +168,11 @@ Can we predict how much protein a recipe contains, based on its other nutritiona
 
 Specifically, we'll try to predict the **'protein_pdv'** (percent daily value of protein) using features such as:
 
->calories, total_fat_pdv, sugar_pdv, carbohydrates_pdv
+>**Nutrition Info:** 'calories', 'total_fat_pdv', 'sugar_pdv', 'carbohydrates_pdv'
 >
->tags like 'meat', 'high-protein', 'vegetarian', etc. extracted from the tags column
+>**Tags**: 'meat', 'high-protein', 'vegetarian', etc. extracted from the tags column
 >
->number of ingredients or steps
+>**Other Columns:** 'n_steps' and 'n_ingredients'
 
 This is a **regression problem**, as we're predicting a continuous numeric value.
 It could be useful for health-conscious users or dietary planning apps that need protein estimates without full nutritional data.
