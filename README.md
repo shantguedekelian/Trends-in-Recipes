@@ -340,3 +340,15 @@ This represents a **significant improvement** over the baseline model, which onl
 
 # Fairness Analysis
 
+**Research Question:** 
+
+Is there a significant difference in model performance between recipes labeled with **'is_beef'** and those labeled with **'is_chicken'**?
+
+>**Null Hypothesis:** The model performs equally well for both categories. Any observed difference in **RMSE** between **beef** and **chicken** recipes is due to random variation.
+>
+>**Alternate Hypothesis:** The model's performance **differs significantly** between the two groups. Specifically, it has a **higher** or **lower RMSE** for **beef** recipes compared to *chicken* recipes — suggesting potential **bias or unfairness**.
+
+**Evaluation Metric:** 
+
+Root Mean Squared Error (RMSE) is used to compare performance, as it is sensitive to **large prediction errors**. A higher RMSE indicates the model is making larger mistakes, which would highlight if it’s systematically underperforming for one group.
+
