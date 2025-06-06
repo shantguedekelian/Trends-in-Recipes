@@ -130,7 +130,11 @@ The plot shows that the description column is definitely dependent on the number
 
 I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
 
-**Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. ([# of recipes with 'high_protein' tag after 2016/ # total recipes] - [# of recipes with 'high_protein' tag before 2016 / # total recipes])
+**Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. 
+\[
+\frac{\#\text{ recipes with high\_protein tag after 2016}}{\#\text{ total recipes after 2016}} -
+\frac{\#\text{ recipes with high\_protein tag before 2016}}{\#\text{ total recipes before 2016}}
+\]
 
 **Figure 4:** the histogram shows the distribution of the test statistic.
 
