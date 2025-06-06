@@ -138,8 +138,8 @@ I will conduct a one-tailed permutation test to assess whether the difference in
 **Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. 
 
 $$
-\left( \frac{\text{high_protein}_{>2016}}{\text{total \# recipes}} \right) -
-\left( \frac{\text{high_protein}_{\leq2016}}{\text{total \# recipes}} \right) 
+\left( \frac{\text{# high_protein}_{>2016}}{\text{total # recipes}} \right) -
+\left( \frac{\text{# high_protein}_{\leq2016}}{\text{total # recipes}} \right) 
 $$
 
 <br>
