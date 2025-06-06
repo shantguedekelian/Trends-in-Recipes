@@ -208,6 +208,10 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 
 
 # Final Model
+### Model Overview:
+
+For the final model, I expanded the feature set and selected a more flexible algorithm to better capture nonlinear relationships in the data.
+
 ### Features in my Final Model:
 
 >**Nutrition Info:** added three more features to increase number of nutritional features since there might be a relationship between nutrition info.
@@ -248,13 +252,17 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 
 **Model:**
 
->**Decision Trees Model:** Chosen for its _____.
+>**Decision Trees Model:** A decision tree model was chosen for its ability to capture nonlinear patterns and interactions between variables. It also offers interpretability and handles both quantitative and binary features effectively.
+
+.
 
 ### Feature Engineering:
 
-I found the tags with the greatest correlation to `protein_pdv` by one-hot-encoding all of the tags in the `tags` column, and computing the correlation between them and the target variable. Below is the dataframe of tags with the top ten highest correlations to `protein_pdv`.
+To enhance predictive power, I explored the tags column by one-hot encoding each tag and calculating its correlation with the target variable, protein_pdv.
 
-|                   |   protein_pdv |
+Below is a table of the top tags most positively correlated with protein content:
+
+|                   |   Correlation |
 |:------------------|--------------:|
 | protein_pdv       |      1        |
 | main-dish         |      0.424862 |
@@ -267,17 +275,17 @@ I found the tags with the greatest correlation to `protein_pdv` by one-hot-encod
 | pork              |      0.183208 |
 | chicken-breasts   |      0.178225 |
 
-
+These tags were added as binary indicator features (1 if present, 0 otherwise) to the model to improve its ability to distinguish high-protein recipes.
 
 ### Normalization:
 
-I chose to normalize these columns: `calories`, `total_fat_pdv`, `sugar_pdv`, `carbohydrates_pdv`, `n_steps`, and `protein_pdv`.
+To address skewed distributions and outliers, I applied normalization to the following quantitative features: `calories`, `total_fat_pdv`, `sugar_pdv`, `carbohydrates_pdv`, `n_steps`, and `protein_pdv`.
 
-I did this since their distributions were highly skewed and had many outliers. Below is an example of the distribution of the `calories` column.
+These columns showed significant right-skew, with extreme values that could negatively affect model performance and interpretation. Below is an example of the original distribution of the `calories` column.
 
 <br>
 
-**Figure 5:** the histogram shows the distribution of the test statistic.
+**Figure 5:** Histogram showing the original distribution of the `calories` feature.
 
 <iframe
   src="assets/skewed_calories_dist.html"
@@ -288,11 +296,11 @@ I did this since their distributions were highly skewed and had many outliers. B
 
 <br>
 
-To normalize my data, I applied a Logirithmic Transformation as its really affective when dealing with skewed data. Below is an example of he distribution of the `calories` column after the log transform.
+To normalize the data, I applied a logarithmic transformation, which is particularly effective for reducing skew and compressing the impact of large outliers. Below is the resulting distribution of `calories` after applying the transformation:
 
 <br>
 
-**Figure 6:** the histogram shows the distribution of the test statistic.
+**Figure 6:**  Histogram showing the distribution of `calories` after log transformation.
 
 <iframe
   src="assets/transformed_calories_dist.html"
@@ -303,9 +311,7 @@ To normalize my data, I applied a Logirithmic Transformation as its really affec
 
 <br>
 
-
-
-
+The transformed distribution is much closer to normal, which helps improve model stability and interpretability.
 
 
 ### Grid Search for best hyperparameters
