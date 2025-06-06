@@ -184,16 +184,24 @@ The metric I will use to evaluate my model will be R² because it provides a cle
 
 >**Features:**
 >
->'calories': The amount of calories in a serving of the recipe.
->'is_meat': A binary (0 or 1) determining whether or not the 'is-meat' tag is in the 'tags' column of the recipe.
+>'calories': Quantitative - The amount of calories in a serving of the recipe.
+>
+>'is_meat': Nominal - A binary (0 or 1) determining whether or not the 'is-meat' tag is in the 'tags' column of the recipe.
 
 >**Predicting:**
 >
->'protein_pdv':
+>'protein_pdv': The amount of protein in a serving of the recipe (measured in % Daily Value).
+
+I will use a **Linear Regression** model.
+
+**Performance:**
+
+My model achieved an R² value of **0.49** which is pretty bad! This model doesn't have enough features to peform good and also the Linear Regression might not be the best model for this task because__. Transformations might also be necessary to normalize the data and get more interpretable results and better performance. 
 
 
 # Final Model
 **Features in my Final Model:**
+
 >**Nutrition Info:**
 >
 >'calories':
