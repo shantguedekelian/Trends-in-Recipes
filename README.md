@@ -332,7 +332,11 @@ Based on the grid search, the best-performing combination was:
 >
 >`'min_samples_split': 10`
 
+### Model Results:
 
+The model achieved a **cross-validated R² of 0.837**, suggesting strong predictive performance on unseen data. When **refit** on the **full training set**, the R² rose to **0.976**, indicating a very close fit to the training data, which may hint at slight overfitting. 
+
+This represents a **significant improvement** over the baseline model, which only achieved a **cross-validated R² of 0.49**. The added features, log transformations, and optimized hyperparameters contributed to a more robust and accurate model.
 
 # Fairness Analysis
 
