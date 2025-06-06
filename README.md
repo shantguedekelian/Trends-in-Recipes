@@ -186,7 +186,7 @@ The metric I will use to evaluate my model will be R² because it provides a cle
 >
 >`calories` *(Quantitative)*: The number of calories per serving of the recipe.
 >
->`is_meat` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'is-meat'.
+>`is_meat` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'meat'.
 
 >**Target:**
 >
@@ -194,7 +194,7 @@ The metric I will use to evaluate my model will be R² because it provides a cle
 
 **Model:**
 
-**Linear Regression Model:** Chosen for its simplicity and interpretability as a starting point..
+>**Linear Regression Model:** Chosen for its simplicity and interpretability as a starting point.
 
 **Performance:**
 
