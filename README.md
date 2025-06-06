@@ -242,7 +242,66 @@ The baseline model achieved an **R² value of 0.49**, which indicates limited ex
 >
 >`is_beef` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'beef'.
 
-I found the tags with the greatest correlation to `protein_pdv` by __. Below is the dataframe of tags with the top ten highest correlations to `protein_pdv`.
+>**Target:**
+>
+>`protein_pdv`: The percent daily value of protein in a serving of the recipe.
+
+**Model:**
+
+>**Decision Trees Model:** Chosen for its _____.
+
+### Feature Engineering:
+
+I found the tags with the greatest correlation to `protein_pdv` by one-hot-encoding all of the tags in the `tags` column, and computing the correlation between them and the target variable. Below is the dataframe of tags with the top ten highest correlations to `protein_pdv`.
+
+|                   |   protein_pdv |
+|:------------------|--------------:|
+| protein_pdv       |      1        |
+| main-dish         |      0.424862 |
+| meat              |      0.423562 |
+| poultry           |      0.286588 |
+| high-protein      |      0.264706 |
+| chicken           |      0.264121 |
+| high-in-something |      0.205527 |
+| beef              |      0.186752 |
+| pork              |      0.183208 |
+| chicken-breasts   |      0.178225 |
+
+
+
+### Normalization:
+
+I chose to normalize these columns: `calories`, `total_fat_pdv`, `sugar_pdv`, `carbohydrates_pdv`, `n_steps`, and `protein_pdv`.
+
+I did this since their distributions were highly skewed and had many outliers. Below is an example of the distribution of the `calories` column.
+
+<br>
+
+**Figure 5:** the histogram shows the distribution of the test statistic.
+
+<iframe
+  src="assets/skewed_calories_dist.html"
+  width="900"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<br>
+
+To normalize my data, I applied a Logirithmic Transformation as its really affective when dealing with skewed data. Below is an example of he distribution of the `calories` column after the log transform.
+
+<br>
+
+**Figure 6:** the histogram shows the distribution of the test statistic.
+
+<iframe
+  src="assets/transformed_calories_dist.html"
+  width="900"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<br>
 
 
 
