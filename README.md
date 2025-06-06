@@ -214,7 +214,7 @@ For the final model, I expanded the feature set and selected a more flexible alg
 
 ### Features in my Final Model:
 
->**Nutrition Info:** added three more features to increase number of nutritional features since there might be a relationship between nutrition info.
+>**Nutrition Info:** I included additional nutritional features under the hypothesis that different macronutrients may have predictive value for protein content.
 >
 >`calories` *(Quantitative)*: The number of **calories** per serving of the recipe.
 >
@@ -224,13 +224,13 @@ For the final model, I expanded the feature set and selected a more flexible alg
 >
 >`carbohydrates_pdv` *(Quantitative)*: The percent daily value of **carbohydrates** in a serving of the recipe.
 
->**Other Columns:** added these features since there might be a relationship with the complexity of the recipe with the amount of protein
+>**Additional Complexity Features:** These features were included to capture potential relationships between recipe complexity and protein content.
 >
 >`n_steps` *(Quantitative)*: The number of **steps** in a recipe.
 >
 >`n_ingredients` *(Quantitative)*: The number of **ingredients** in a recipe.
 
-> **Tags:** added five more encodings from the `tags` column based on the greatest correlation between the tag and `protein_pdv`.
+> **Tag-Based Features:** I added binary features based on the top tag correlations with `protein_pdv`. These were one-hot encoded from the `tags` column.
 >
 >`is_meat` *(Nominal)*: A binary feature (0 or 1) indicating whether the recipe contains the tag 'meat'.
 >
@@ -253,8 +253,6 @@ For the final model, I expanded the feature set and selected a more flexible alg
 **Model:**
 
 >**Decision Trees Model:** A decision tree model was chosen for its ability to capture nonlinear patterns and interactions between variables. It also offers interpretability and handles both quantitative and binary features effectively.
-
-.
 
 ### Feature Engineering:
 
