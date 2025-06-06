@@ -118,11 +118,33 @@ The histogram shows the empirical distribution of the test statistic (difference
 
 <br>
 
-The plot shows that the description column is definitely dependent on
+The plot shows that the description column is definitely dependent on the number of ingredients column, making it's type of missingness MAR.
 
 
 # Hypothesis Testing
+### Question: Are certain tags or ingredients becoming more popular (e.g., “high-protein”)?
 
+> **Null Hypothesis (H0):** The proportion of recipes with the **'high-protein'** tag has not increased after 2016.
+>
+> **Alternate Hypothesis (H1):** The proportion of recipes with the **'high-protein'** tag has increased after 2016.
+
+I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
+
+**Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. ([# of recipes with 'high_protein' tag after 2016/ # total recipes] - [# of recipes with 'high_protein' tag before 2016 / # total recipes])
+
+**Figure 4:** the histogram shows the distribution of the test statistic.
+
+<br>
+<iframe
+  src="assets/protein_perm_test.html"
+  width="900"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<br>
+
+Our observed statistic is really far to the right and with a **p-value of <0.01**, we can conlude that our observed difference in proportions is **statistically significant**. Meaning that we **reject** the Null Hypothesis and conclude that there is a really likely **increase** in popularity for the **'high_protein'** tag after 2016.
 
 # Framing a Prediction Problem
 
