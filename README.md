@@ -3,8 +3,6 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# **Cooking Up Protein Predictions** 
-by Shant Guedekelian
 
 # Introduction
 This project explores trends in online recipes over time using a dataset from Food.com, which includes thousands of user-submitted recipes and reviews. The central question we aim to answer is: **Have high-protein recipes become more popular in recent years?**
@@ -16,17 +14,17 @@ This is a trend that is important to more than just health experts as it reflect
 The dataset that I am using contains **234,429 rows**, each corresponding to a review written about a recipe. In total there are **83,782 unique** recipes in my dataset. 
 
 Some relevant columns are:
->**'submitted':** Date recipe was submitted.
+>'`submitted`': Date recipe was submitted.
 >
->**'tags':** Food.com tags for recipe (gluten free, etc).
+>**`tags`:** Food.com tags for recipe (gluten free, etc).
 >
->**'nutrition':** Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value”.
+>**`nutrition`:** Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value”.
 >
->**'n_ingredients':** Number of ingredients in recipe.
+>**`n_ingredients`:** Number of ingredients in recipe.
 >
->**'n_steps':** Number of steps in recipe.
+>**`n_steps`:** Number of steps in recipe.
 >
->**'date':** Date when review was submitted.
+>**`date`:** Date when review was submitted.
 
 
 # Data Cleaning and Exploratory Data Analysis
