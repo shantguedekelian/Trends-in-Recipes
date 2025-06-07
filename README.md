@@ -127,9 +127,17 @@ There are only three columns in the dataset that contain missing values: `descri
 
 >**NMAR (Not Missing at Random):**
 >
->`rating`: Likely NMAR. Ratings tend to be more commonly left when users feel strongly, **either very positively or very negatively** about a recipe. More neutral experiences are less likely to result in a submitted rating.
+>`rating`: Likely NMAR. Ratings tend to be more commonly left when users feel strongly, **either very positively or very negatively** about a recipe. More neutral experiences are less likely to result in a submitted rating. To verify it isn't MAR, I would ideally have data on whether ___
 >
 >`review`: Also likely NMAR, for the same reasons as `rating`. People are more likely to leave a review when they really loved a recipe, or they really hated it.
+
+To verify that the missingness **isn't Missing At Random (MAR)**, I would ideally need additional **user behavior data**, such as:
+
+>Whether a user viewed or cooked a recipe but chose not to rate it
+>
+>Whether the user left a review without a rating
+
+This data could help determine whether the missingness **depends on observed behavior rather than the unobserved rating**, which would support a **MAR classification** instead.
 
 >**MAR (Missing at Random):**
 >
