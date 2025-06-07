@@ -53,7 +53,7 @@ Next, I parsed the **nutrition column**, which originally stored all nutrient in
 >
 >*... and others*
 
-Below is a couple of rows of the final dataset:
+Below is a couple of rows of the cleaned dataset:
 
 |    | name                                 |     id |   minutes |   contributor_id | submitted   | tags                          | nutrition                                    |   n_steps | steps                                                               | description   | ingredients                      |   n_ingredients |   calories |   total_fat_pdv |   sugar_pdv |   sodium_pdv |   protein_pdv |   sat_fat_pdv |   carbohydrates_pdv |          user_id |   recipe_id | date       |   rating | review        |   mean_rating |
 |---:|:-------------------------------------|-------:|----------:|-----------------:|:------------|:------------------------------|:---------------------------------------------|----------:|:--------------------------------------------------------------------|:--------------|:---------------------------------|----------------:|-----------:|----------------:|------------:|-------------:|--------------:|--------------:|--------------------:|-----------------:|------------:|:-----------|---------:|:--------------|--------------:|
@@ -76,6 +76,8 @@ Below is a couple of rows of the final dataset:
   height="600"
   frameborder="0"
 ></iframe>
+
+There is a clear **right-skew** in the distribution, indicating that most meals have a similar calorie range, while a smaller number of recipes contain **significantly higher calories** (outliers).
 
 ### Bivariate Analysis:
 
