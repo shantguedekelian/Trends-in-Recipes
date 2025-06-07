@@ -216,7 +216,7 @@ Specifically, we'll build a **regression model** to predict a continuous target 
 >
 >**Tags (from the `tags` column)**: `meat`, `high-protein`, `vegetarian`, etc. extracted from the `tags` column
 >
->**Other Descriptive Features::** `n_steps` and `n_ingredients`
+>**Other Descriptive Features:** `n_steps` and `n_ingredients`
 
 This problem is relevant to health-conscious users and apps that aim to estimate protein content when full nutrition data isn’t available.
 
