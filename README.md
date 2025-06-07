@@ -3,10 +3,8 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# **Trends in Recipes** 
+# **Cooking Up Protein Predictions** 
 by Shant Guedekelian
-
-this is a project for DSC 80 at UCSD
 
 # Introduction
 This project explores trends in online recipes over time using a dataset from Food.com, which includes thousands of user-submitted recipes and reviews. The central question we aim to answer is: **Have high-protein recipes become more popular in recent years?**
@@ -354,10 +352,12 @@ Root Mean Squared Error (RMSE) is used to compare performance, as it is sensitiv
 
 **Test Statistic:** 
 
-I used the difference in RMSE between the is_chicken and is_beef recipe groups as the test statistic.
+I used the **difference in RMSE** between the `is_chicken` and `is_beef` recipe groups as the test statistic.
 
 **Result:** 
 
 The resulting **p-value was 0.80**, which is well above the typical significance threshold of **α = 0.05**. This means that the observed difference in RMSE is likely due to **random chance**, and not statistically significant.
 
 Therefore, we **fail to reject the null hypothesis**. There is **no strong evidence** that the model performs differently for chicken vs. beef recipes, suggesting it may be fair with respect to these two categories.
+
+
