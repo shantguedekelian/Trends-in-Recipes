@@ -352,3 +352,12 @@ Is there a significant difference in model performance between recipes labeled w
 
 Root Mean Squared Error (RMSE) is used to compare performance, as it is sensitive to **large prediction errors**. A higher RMSE indicates the model is making larger mistakes, which would highlight if it’s systematically underperforming for one group.
 
+**Test Statistic:** 
+
+I used the difference in RMSE between the is_chicken and is_beef recipe groups as the test statistic.
+
+**Result:** 
+
+The resulting **p-value was 0.80**, which is well above the typical significance threshold of **α = 0.05**. This means that the observed difference in RMSE is likely due to **random chance**, and not statistically significant.
+
+Therefore, we **fail to reject the null hypothesis**. There is **no strong evidence** that the model performs differently for chicken vs. beef recipes, suggesting it may be fair with respect to these two categories.
