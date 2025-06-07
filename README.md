@@ -148,9 +148,9 @@ The plot demonstrates a clear dependence between the `description` column and th
 # Hypothesis Testing
 ### Question: Are certain tags or ingredients becoming more popular (e.g., “high-protein”)?
 
-> **Null Hypothesis (H0):** The proportion of recipes with the **'high-protein'** tag has not increased after 2016.
+> **Null Hypothesis (H0):** The proportion of recipes with the `high-protein` tag has not increased after 2016.
 >
-> **Alternate Hypothesis (H1):** The proportion of recipes with the **'high-protein'** tag has increased after 2016.
+> **Alternate Hypothesis (H1):** The proportion of recipes with the `high-protein` tag has increased after 2016.
 
 I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
 
@@ -164,7 +164,7 @@ $$
 \left( \frac{\text{# high_protein}_{\leq2016}}{\text{total # recipes}_{\leq2016}} \right) 
 $$
 
-This test statistic is appropriate because it directly measures the change in popularity of the tag as a proportion of all recipes in each period. A one-tailed test is justified because we are only interested in detecting an **increase** in popularity.
+This test statistic is appropriate because it directly measures the **change in popularity** of the tag as a proportion of all recipes in each period. A **one-tailed test** is justified because we are only interested in detecting an **increase** in popularity.
 
 <br>
 
@@ -187,9 +187,9 @@ We therefore **reject the null hypothesis** and conclude that the `high_protein`
 
 # Framing a Prediction Problem
 **Prediction Problem:**
-Can we predict how much protein a recipe contains, based on its other nutritional and descriptive features?
+Can we predict how much **protein** a recipe contains, based on its other **nutritional and descriptive features**?
 
-Specifically, we'll build a regression model to predict a continuous target variable `protein_pdv` (% daily value) based on the following:
+Specifically, we'll build a **regression model** to predict a continuous target variable `protein_pdv` (% daily value) based on the following:
 
 >**Nutrition Features:** `calories`, `total_fat_pdv`, `sugar_pdv`, `carbohydrates_pdv`
 >
@@ -374,7 +374,7 @@ This represents a **significant improvement** over the baseline model, which onl
 
 **Research Question:** 
 
-Is there a significant difference in model performance between recipes labeled with **'is_beef'** and those labeled with **'is_chicken'**?
+Is there a significant difference in model performance between recipes labeled with `is_beef` and those labeled with `is_chicken`?
 
 >**Null Hypothesis:** The model performs equally well for both categories. Any observed difference in **RMSE** between **beef** and **chicken** recipes is due to random variation.
 >
