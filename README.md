@@ -155,20 +155,20 @@ The plot demonstrates a clear dependence between the `description` column and th
 I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
 
 
-**Significance Level:** *P = 0.05*
+**Significance Level:** *α = 0.05*
 
-**Test Statistic:** the difference in means between the proportion of **'high_protein'** tag after 2016 and before 2016. 
+**Test Statistic:** The **difference in proportions** of recipes tagged as `high_protein` before and after 2016: 
 
 $$
 \left( \frac{\text{# high_protein}_{>2016}}{\text{total # recipes}_{>2016}} \right) -
 \left( \frac{\text{# high_protein}_{\leq2016}}{\text{total # recipes}_{\leq2016}} \right) 
 $$
 
-The choice of test statistic is valid since we only care about a positive difference in means. Also because in the hypothesis we are dealing with difference in proportions. And difference in proportions is a good metric of popularity because it shows how popular it was compared to other tags.
+This test statistic is appropriate because it directly measures the change in popularity of the tag as a proportion of all recipes in each period. A one-tailed test is justified because we are only interested in detecting an **increase** in popularity.
 
 <br>
 
-**Figure 4:** the histogram shows the distribution of the test statistic.
+**Figure 4:** The histogram shows the empirical distribution of the test statistic under the null hypothesis. The observed value is marked in red.
 
 <iframe
   src="assets/protein_perm_test.html"
@@ -179,7 +179,11 @@ The choice of test statistic is valid since we only care about a positive differ
 
 <br>
 
-Our observed statistic is really far to the right and with a **p-value of <0.01**, we can conlude that our observed difference in proportions is **statistically significant**. Meaning that we **reject** the Null Hypothesis and conclude that there is a really likely **increase** in popularity for the **'high_protein'** tag after 2016.
+**Conclusion:**
+
+Since the observed statistic lies far in the right tail of the distribution, and the **p-value is < 0.01**, the result is **statistically significant**.
+
+We therefore **reject the null hypothesis** and conclude that the `high_protein` tag has **increased in popularity after 2016**
 
 # Framing a Prediction Problem
 **Prediction Problem:**
