@@ -174,8 +174,7 @@ The resulting p-value was 0.003 demonstrating a clear dependence between the `de
 >
 > **Alternate Hypothesis (H1):** The proportion of recipes with the `high-protein` tag has increased after 2016.
 
-I will conduct a one-tailed permutation test to assess whether the difference in proportions is statistically significant.
-
+I will conduct a **one-tailed permutation test** to assess whether the difference in proportions is **statistically significant**.
 
 **Significance Level:** *α = 0.05*
 
