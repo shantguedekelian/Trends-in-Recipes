@@ -110,25 +110,27 @@ We observe a **general upward trend** in calories as the number of ingredients i
 
 # Assessment of Missingness
 ### NMAR Analysis:
-There are only 3 columns in the dataset that contain NaN values; they are **description**, **rating**, **review**.
-Lets take a look at each one.
+There are only three columns in the dataset that contain missing values: `description`, `rating`, and `review`. Let's analyze the likely **missingness mechanism** for each:
 
-> **Description:** Not NMAR, most likely MAR since the probability of a recipe not having a description likely depends on how complex a recipe is.
+>**NMAR (Not Missing at Random):**
+>`rating`: Likely NMAR. Ratings tend to be more commonly left when users feel strongly, **either very positively or very negatively** about a recipe. More neutral experiences are less likely to result in a submitted rating.
 >
-> **Rating:** NMAR since ratings tend to be extremely positive or negative. If the review is more in the middle, there is a lower probability of the user writing it. People are more likely to leave a review when they really loved a recipe, or they really hated it.
+>`review`: Also likely NMAR, for the same reasons as `rating`. People are more likely to leave a review when they really loved a recipe, or they really hated it.
+
+>**MAR (Missing at Random):**
 >
-> **Review:** NMAR for the same reason as Rating column. People are more likely to leave a review when they really loved a recipe, or they really hated it.
+>`description`: Likely MAR. The likelihood that a recipe is missing a description may depend on observable features such as **recipe complexity**. For instance, simpler recipes might not require a description, whereas more involved recipes might have more detailed instructions.
 
 ### MAR Analysis:
-To determine if the missing values in **description** column are MAR, **I will perform a permutation test to see if the probability of null values in the 'description' column is dependent on 'n-ingredients' and unrelated to 'sugar_pdv'**
+To evaluate whether the missingness in the `description` column is truly **MAR**, I performed a **permutation test** to examine if the probability of missing descriptions is dependent on observable features:
 
-> n_ingredients: Likely related to 'description' column (more complex recipes might get more explanation).
+> `n_ingredients`: Likely related to `description` column (more complex recipes might get more explanation).
 >
-> sugar_pdv: Likely not related to 'description' column (nutritional info is calculated).
+> `sugar_pdv`: Likely not related to `description` column (nutritional info is calculated).
 
 <br>
 
-**Figure 3** The histogram shows the empirical distribution of the test statistic (difference in mean number of ingredients between missing, and not missing descriptions), along with the observed statistic in red. 
+**Figure 3** The histogram below shows the **empirical distribution** of the test statistic (the difference in mean number of ingredients between recipes with and without descriptions). The observed statistic is marked in **red**.
 
 <br>
 <iframe
@@ -140,7 +142,7 @@ To determine if the missing values in **description** column are MAR, **I will p
 
 <br>
 
-The plot shows that the description column is definitely dependent on the number of ingredients column, making it's type of missingness MAR.
+The plot demonstrates a clear dependence between the `description` column and the `n_ingredients` feature, supporting the conclusion that the missingness in description is **Missing At Random (MAR)**.
 
 
 # Hypothesis Testing
