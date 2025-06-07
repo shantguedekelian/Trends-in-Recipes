@@ -54,9 +54,9 @@ Next, I parsed the **nutrition column**, which originally stored all nutrient in
 >*... and others*
 
 ### Univariate Analysis:
+
 **Figure 1** represents the distribution of **calories per serving**, giving insight into the overall nutritional density of the recipes.
 
-<br>
 <br>
 
 <iframe
@@ -67,6 +67,7 @@ Next, I parsed the **nutrition column**, which originally stored all nutrient in
 ></iframe>
 
 ### Bivariate Analysis:
+
 **Figure 2** represents the relationship between of **calories and total fat**, giving insight into how calorie-dense fat is.
 
 <br>
