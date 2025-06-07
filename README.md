@@ -82,10 +82,11 @@ Next, I parsed the **nutrition column**, which originally stored all nutrient in
 
 <br>
 
-This scatter plot shows a strong correlation (an **R<sup>2</sup>** value of **0.74**) between the two variables as shown by the trendline. This makes sense as fat is 7 calories per gram, making the densest nutrient in calories.
+This scatter plot reveals a strong positive correlation between the two variables, with an **R² value of 0.74**, as indicated by the trendline. This relationship is intuitive as **fat contains 9 calories per gram**, making it the most calorie-dense macronutrient.
 
 ### Interesting Aggregrates:
-The mean calories for each number of ingredients.
+Below is the **mean number of calories per recipe** grouped by the number of ingredients:
+
 
 <br>
 
@@ -105,7 +106,7 @@ The mean calories for each number of ingredients.
 
 <br>
 
-As we see, there is an overall increase in calories as the number of ingredients increases; suggesting that more complex meals might be correlated with higher calories.
+We observe a **general upward trend** in calories as the number of ingredients increases. This suggests that **more complex recipes** (with more ingredients) may tend to be higher in calories, potentially due to the inclusion of richer or more calorie-dense components.
 
 
 # Assessment of Missingness
@@ -128,7 +129,7 @@ To determine if the missing values in **description** column are MAR, **I will p
 
 <br>
 
-The histogram shows the empirical distribution of the test statistic (difference in mean number of ingredients between missing, and not missing descriptions), along with the observed statistic in red.
+**Figure 3** The histogram shows the empirical distribution of the test statistic (difference in mean number of ingredients between missing, and not missing descriptions), along with the observed statistic in red. 
 
 <br>
 <iframe
