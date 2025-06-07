@@ -189,18 +189,27 @@ We therefore **reject the null hypothesis** and conclude that the `high_protein`
 **Prediction Problem:**
 Can we predict how much protein a recipe contains, based on its other nutritional and descriptive features?
 
-Specifically, we'll try to predict the **'protein_pdv'** (percent daily value of protein) using features such as:
+Specifically, we'll build a regression model to predict a continuous target variable `protein_pdv` (% daily value) based on the following:
 
->**Nutrition Info:** 'calories', 'total_fat_pdv', 'sugar_pdv', 'carbohydrates_pdv'
+>**Nutrition Features:** `calories`, `total_fat_pdv`, `sugar_pdv`, `carbohydrates_pdv`
 >
->**Tags**: 'meat', 'high-protein', 'vegetarian', etc. extracted from the tags column
+>**Tags (from the `tags` column)**: `meat`, `high-protein`, `vegetarian`, etc. extracted from the `tags` column
 >
->**Other Columns:** 'n_steps' and 'n_ingredients'
+>**Other Descriptive Features::** `n_steps` and `n_ingredients`
 
-This is a **regression problem**, as we're predicting a continuous numeric value.
-It could be useful for health-conscious users or dietary planning apps that need protein estimates without full nutritional data.
+This problem is relevant to health-conscious users and apps that aim to estimate protein content when full nutrition data isn’t available.
 
-The metric I will use to evaluate my model will be R² because it provides a clear measure of how well our features explain the variability in the target variable (protein_pdv). Unlike RMSE or MAE, which are in the units of the target variable and harder to interpret directly, R² is a unitless, relative metric that tells us how much better our model. This makes it especially useful for comparing models and understanding overall performance. I considered RMSE and MAE, but chose R² for its interpretability and its ability to convey how much variance in protein_pdv our model captures.
+**Evaluation Metric:**
+
+I chose **R²** as the primary evaluation metric because:
+
+>It measures the **proportion of variance** in `protein_pdv` explained by the model.
+>
+>It’s **unitless and more interpretable** than RMSE or MAE when comparing model performance.
+>
+>It provides a clearer sense of how well the features capture the **structure of the data**.
+
+I considered RMSE and MAE, but chose R² for its **interpretability** and its ability to convey how much variance in `protein_pdv` our model captures.
 
 # Baseline Model
 **Features in my Baseline Model:**
