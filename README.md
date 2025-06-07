@@ -30,11 +30,30 @@ Some relevant columns are:
 
 
 # Data Cleaning and Exploratory Data Analysis
-First of all, I had to merge two datasets. One contained all of the recipes information like the tags, nutrition info, and ingredients; the other contained all of the information regarding user feedback such as the date the review was submitted. 
+To begin I merged two datasets. 
 
-Then using the merged dataframe, I filled in the ratings of 0 with null since ratings usually start at 1, and I wouldn't want the zeroes to affect my future results. I created a new column named 'mean_rating' which represents the mean rating per recipe.
+>One contained recipe information such as **tags, ingredients, and nutrition facts.**
+>
+>The other included **user-generated reviews**, including timestamps and ratings.
 
-Using the 'nutrition' column of the merged dataset, I added 7 columns, one for each nutrient information (calories, sugar pdv, carbohydrate pdv, etc).
+After merging, I performed the following cleaning steps:
+
+>**Replaced all 0-star ratings with null values**, assuming that ratings start at 1 and that zeroes likely represent missing data.
+>
+>**Calculated a new column mean_rating** to represent the average rating per recipe, which helped summarize user feedback effectively.
+
+Next, I parsed the **nutrition column**, which originally stored all nutrient information as a list. I split this into **seven separate columns**, each representing a specific nutritional component such as: 
+>`calories`
+>
+>`total_fat_pdv`
+>
+>`sugar_pdv`
+>
+>`carbohydrate_pdv`
+>
+>`protein_pdv`
+>
+>*... and others*
 
 ### Univariate Analysis:
 **Figure 1** represents the distribution of **calories per serving**, giving insight into the overall nutritional density of the recipes.
